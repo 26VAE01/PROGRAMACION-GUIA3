@@ -1,12 +1,14 @@
-Proceso LlenarRefrigerador
-    Definir L Como Entero
+Proceso Estacionamiento
+    Definir cupo, autos Como Entero
     
-    L <- 0
+    cupo <- 200
+    autos <- 0
     
     Repetir
-        L <- L + 1
-        Escribir "Guardando lata número: ", L
-    Hasta Que L >= 40
+        autos <- autos + 1
+        Escribir "Autos dentro: ", autos
+        Escribir "Cajones disponibles: ", cupo - autos
+    Hasta Que autos = cupo
     
-    Escribir "El refrigerador está lleno"
+    Escribir "Ya no hay cajones disponibles"
 FinProceso
